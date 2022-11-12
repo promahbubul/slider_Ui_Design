@@ -338,5 +338,25 @@ header nav .nav-links a:last-child:hover {
     }
 }
 
+@media (max-width: 290px)  {
+    .slider .slide .left h1 {
+        font-size: 1.4rem;
+    }
+    .slider .slide .left p {
+        padding-right: 0;
+        font-size: 0.8rem;
+        text-align: justify;
+    }
+
+    .slider .slide .form input {
+        font-size: 0.7rem;
+    }
+
+    .slider_btns button {
+        font-size: 0.8rem;
+    }
+
+}
+
 
 
