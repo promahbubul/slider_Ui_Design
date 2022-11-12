@@ -131,10 +131,12 @@ header nav .nav-links a:last-child:hover {
 
 .slider_btns button:first-child span {
     margin-left: 1rem;
+    cursor: pointer;
 }
 
 .slider_btns button:last-child span {
     margin-right: 1rem;
+    cursor: pointer;
 }
 
 .slider_dots ul {
