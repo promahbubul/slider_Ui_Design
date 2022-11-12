@@ -229,3 +229,114 @@ header nav .nav-links a:last-child:hover {
 .slick-active h6 {
     animation: slideInup 4s forwards;
 }
+
+@media (max-width: 1600px) {
+    .slick-slider img {
+        width: 500px;
+    }
+
+    .slider .slide h1 {
+        font-size: 3rem;
+    }
+
+    .slider .slide .left p {
+        padding-right: 0px;
+    }
+
+    .slider .slide .form {
+        width: 80%;
+    }
+}
+
+@media (max-width: 1439px) {
+    .slick-slider img {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 1279px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .slider_dots ul li.slick-active::before {
+        left: 50px;
+    }
+
+    .slider_dots ul li {
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .nav-links {
+        display: none ;
+    }
+
+    .slider .slide {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .slider .slide .left p {
+        padding-right: 4rem;
+    }
+
+    .slider_dots {
+        margin-top: 4rem;
+    }
+}
+
+@media (max-width: 418px) {
+    .slider .slide {
+        display: block;
+    }
+
+    .slider .slide img {
+        display: none;
+    }
+
+    .slick-slider h1 {
+        font-size: 2rem;
+    }
+
+    .slider {
+        margin-top: 0.6rem;
+    }
+
+    .slider .slide .left p {
+        padding-right: 0;
+        font-size: 0.8rem;
+    }
+
+    .slider .slide .form {
+        width: 100%;
+    }
+
+    .slider_dots {
+        display: none;
+    }
+
+    .slider_btns {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+
+@media (max-width: 330px) {
+    .slider .slide .left h1 {
+        font-size: 1.6rem;
+    }
+    
+    .slider .slide .form input {
+        font-size: 0.8rem;
+    }
+
+    .slider .slide .form button{
+        font-size: 0.8rem;
+        padding:0.5rem 1rem ;
+    }
+}
+
+
+

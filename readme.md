@@ -1,6 +1,4 @@
-
 ## Slide UI Design Web Page
-
 
 DemoLink:-
 
