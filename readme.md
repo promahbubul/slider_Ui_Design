@@ -1,8 +1,6 @@
-## Slide UI Design Web Page
+## CSS Slider
+Preview Link:-
 
-DemoLink:-
-
-https://dev-mahbub.github.io/slider_Ui_Design/
-
+https://dev-mahbub.github.io/photo_slider_using_HTML_CSS/
 
 
