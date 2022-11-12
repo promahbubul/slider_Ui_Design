@@ -1,0 +1,229 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing:antialiased;
+    font-family: poppins, sans-serif;
+}
+
+header {
+    background: linear-gradient(145deg,#E100FF 0%, #7D00FF 80%);
+    height: 100vh;
+    width: 100%;
+}
+
+.container {
+    max-width: 75%;
+    margin: 0 auto;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+header nav .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 2rem;
+    transition: all 0.3s ease-in-out;
+}
+
+header nav .nav-links a:hover {
+    color: #333;
+}
+
+header nav .nav-links a:last-child {
+    border: 1px solid #fff;
+    padding: 0.3rem 1rem;
+    border-radius: 50px;
+    margin-left: 4rem;
+}
+
+header nav .nav-links a:last-child:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+.slider {
+    margin-top: 3rem;
+}
+
+.slider .slide {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: end;
+    align-items: center;
+}
+
+.slider .slide img {
+    width: 60%;
+}
+
+.slider .slide .left h1 {
+    font-size: 2.6rem;
+    color: #fff;
+    line-height: 1.3;
+}
+
+.slider .slide .left p {
+    color: #fff;
+    line-height: 1.9;
+    margin-top: 1.5rem;
+    padding-right: 10rem;
+}
+
+.slider .slide .form {
+    background: #fff;
+    padding:0.2rem 0.2rem 0.2rem 0.5rem ;
+    border-radius: 50px;
+    width: 70%;
+    margin-top: 2.7rem;
+    display: flex;
+    align-items: center;
+}
+
+.slider .slide .form input {
+    border: none;
+    flex: 1;
+    padding: 0 0.2rem;
+    font-size: 0.9rem;
+}
+
+.slider .slide .form input:focus {
+    outline: none;
+}
+
+.slider .slide .form button {
+    background: #D800FF;
+    color: #fff;
+    border-radius: 50px;
+    padding: 0.6rem 2rem;
+    border: none;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.slider .slide h6 {
+    font-size: 0.8rem;
+    color: white;
+    margin-top: 1rem;
+    font-weight: 400;
+}
+
+.slider_btns{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: #1c1033;
+}
+
+.slider_btns button {
+    background: none;
+    border: none;
+    color: #fff;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.slider_btns button:first-child span {
+    margin-left: 1rem;
+}
+
+.slider_btns button:last-child span {
+    margin-right: 1rem;
+}
+
+.slider_dots ul {
+    list-style-type: none;
+    display: flex!important;
+    flex-direction: column!important;
+}
+
+.slider_dots ul button {
+    font-size: 0;
+    width: 12px;
+    height: 12px;
+    background: #fff;
+    outline: none;
+    border: none;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
+.slider_dots ul li {
+    position: relative;
+}
+
+.slider_dots ul li.slick-active::before{
+    content: '';
+    height: 4px;
+    position: absolute;
+    left: -100px;
+    top: 60%;
+    background: #fff;
+    border-radius: 50px;
+    animation: dotAnimation 1s forwards;
+}
+
+@keyframes dotAnimation {
+    from {
+        width: 0;
+    }
+    to {
+        width: 80px;
+    }
+}
+
+@keyframes slideInDown {
+    from {
+        transform: translate3d(0,-100%,0);
+    }
+    to {
+        transform: translate3d(0,0,0);
+    }
+}
+
+@keyframes slideInup {
+    from {
+        transform: translate3d(0, 100%, 0);
+        visibility: visible;
+        opacity: 0;
+    }
+    to {
+           transform: translate3d(0,0,0); 
+           opacity: 1;
+    }
+}
+
+.slick-slider .slick-active .left h1 {
+    animation: slideInDown 3s;
+}
+
+.slick-active .right img {
+    animation: slideInup 1s forwards;
+}
+
+@keyframes fadeIn {
+    form {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.slick-active p {
+    animation: fadeIn 4s forwards;
+    -webkit-animation: forwards 4s forwards;
+}
+
+.slick-active .form {
+    animation: slideInup 2s forwards;
+}
+.slick-active h6 {
+    animation: slideInup 4s forwards;
+}
